@@ -584,8 +584,8 @@ export default function FieldAssistApp() {
           id="device-frame"
           className="w-full max-w-[390px] h-[100dvh] sm:h-[844px] sm:max-h-[844px] bg-[#F5F7FA] rounded-none sm:rounded-[48px] shadow-none sm:shadow-[0_25px_60px_-15px_rgba(10,17,38,0.15)] border-0 sm:border-[11px] border-[#0A1126] overflow-hidden relative flex flex-col select-none text-[#0A1126] ring-0 sm:ring-4 ring-white/5"
         >
-        {/* Dynamic Island Simulated Bezel Header - Always Fixed */}
-        <div className="flex-none h-11 bg-black z-40 px-6 flex items-center justify-between pointer-events-none select-none text-[12px] font-semibold text-white relative">
+        {/* Dynamic Island Simulated Bezel Header - Always Fixed on Desktop */}
+        <div className="hidden sm:flex flex-none h-11 bg-black z-40 px-6 items-center justify-between pointer-events-none select-none text-[12px] font-semibold text-white relative">
           <span className="font-mono">10:42</span>
           {/* Bezel Notch / Dynamic Island */}
           <div className="w-[110px] h-[28px] bg-black rounded-3xl absolute left-1/2 -translate-x-1/2 top-1.5 flex items-center justify-center">
@@ -965,7 +965,7 @@ export default function FieldAssistApp() {
                 </div>
 
                 {/* STICKY FOOTER ACTION BUTTON */}
-                <div className="absolute inset-x-0 bottom-0 bg-white border-t border-[#E6EAF0] p-4 pt-3.5 z-20">
+                <div className="absolute inset-x-0 bottom-0 bg-white border-t border-[#E6EAF0] p-4 pt-3.5 pb-6 sm:pb-4 z-20">
                   <button
                     id="start-order-booking-btn"
                     onClick={() => {
@@ -1208,7 +1208,7 @@ export default function FieldAssistApp() {
                 </div>
 
                 {/* STICKY CART FOOTER STICK */}
-                <div className="absolute inset-x-0 bottom-0 bg-white border-t border-[#E6EAF0] p-3 z-25 shadow-lg flex flex-col gap-1.5">
+                <div className="absolute inset-x-0 bottom-0 bg-white border-t border-[#E6EAF0] p-3 pb-6 sm:pb-3 z-25 shadow-lg flex flex-col gap-1.5">
                   
                   {/* Cart Status link */}
                   {cartTotals.totalItemsCount > 0 ? (
@@ -1426,7 +1426,7 @@ export default function FieldAssistApp() {
                 </div>
 
                 {/* BOTTOM STICKY CALCULATIONS BAR */}
-                <div className="absolute inset-x-0 bottom-0 bg-white border-t border-[#E6EAF0] p-4 pt-3.5 z-20 shadow-lg space-y-3.5">
+                <div className="absolute inset-x-0 bottom-0 bg-white border-t border-[#E6EAF0] p-4 pt-3.5 pb-6 sm:pb-4 z-20 shadow-lg space-y-3.5">
                   <div className="space-y-1.5 text-xs">
                     <div className="flex items-center justify-between text-[#6B7280]">
                       <span>Draft Items Subtotal</span>
