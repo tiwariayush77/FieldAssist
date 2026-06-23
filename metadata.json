@@ -1,0 +1,6 @@
+{
+  "name": "FieldAssist Beat Planner",
+  "description": "An operational, field-ready beat and order booking prototype for sales representatives.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
